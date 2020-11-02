@@ -1,0 +1,19 @@
+.background-img {
+  background-image: url("../assets/1202.jpg");
+  background-size: cover;
+  object-fit: cover;
+  width: 100%;
+  height: 100vh;
+}
+
+.door-waves-one {
+  border: 1px solid black;
+  width: 23vh;
+  height: 45vh;
+  position: absolute;
+  left: 129vh;
+  top: 35vh;
+}
+.door-waves-two {
+  left: 69vh;
+}
