@@ -22,15 +22,14 @@
 
 .door-waves-one:hover > .ripple {
   border: 8px solid #0f1e4c;
-  /* opacity: 0.8; */
-  animation: ring 1.5s linear infinite;
+  animation: circle 1.5s linear infinite;
   background-color: transparent;
   position: absolute;
   top: 46%;
   left: 46%;
 }
 
-@keyframes ring {
+@keyframes circle {
   from {
     opacity: 1;
   }

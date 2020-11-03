@@ -1,12 +1,31 @@
-import React from "react";
-// import "../styles/map.css";
+import React, { Component } from "react";
+import "../styles/map.css";
 
-function Map() {
-  return (
-    <div className="bg-img-map">
-      <h1>im fucking map</h1>
-    </div>
-  );
+export default class Map extends Component {
+  constructor(props) {
+    console.log(props, "map props");
+    super(props);
+    this.state = {
+      name: "React",
+    };
+  }
+  render() {
+    return (
+      <div className="main-map">
+        <div className="bg-img-map">
+          <div
+            className="India"
+            onClick={() => this.props.hideComponent("showHideMap")}
+          >
+            <div className="ripple"></div>
+            India
+          </div>
+          <div className="cuba">
+            Cuba
+            <div className="ripple"></div>
+          </div>
+        </div>
+      </div>
+    );
+  }
 }
-
-export default Map;
