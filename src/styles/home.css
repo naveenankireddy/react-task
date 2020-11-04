@@ -1,6 +1,4 @@
-.bg-img-house {
-  background-image: url("../assets/1202.jpg");
-  background-size: cover;
+.bg-img-house .house {
   object-fit: cover;
   width: 100%;
   height: 100vh;
@@ -8,13 +6,15 @@
 }
 
 .door-waves-one {
-  width: 23vh;
-  height: 45vh;
+  border: 1px solid black;
+  width: 9%;
+  height: 45%;
   position: absolute;
   left: 69.5vh;
 
   top: 35vh;
   cursor: pointer;
+  z-index: 64;
 }
 .door-waves-two {
   left: 131vh;
@@ -41,4 +41,125 @@
 
 .audio {
   display: none;
+}
+
+/* Drag and Drop department */
+.dnd-section {
+  display: flex;
+  overflow: hidden;
+  justify-content: space-between;
+  width: 100%;
+  max-width: 50vh;
+  height: 100vh;
+  margin: 0 auto;
+  padding: 15px;
+}
+.dnd-section .board-one {
+  /* display: grid; */
+  /* place-items: center; */
+  position: absolute;
+  border: 1px solid black;
+  top: 60vh;
+  left: 43.5vw;
+  width: 100%;
+  max-width: 25vh;
+  height: 25vh;
+  z-index: 45;
+}
+.dnd-section .board-two {
+  left: 4.4vw;
+  top: 28vh;
+}
+
+.dnd-section .board-one .card {
+  padding-left: 20px;
+  z-index: 45;
+  background-color: transparent;
+  cursor: pointer;
+}
+.dnd-section .board-two .card {
+  padding-left: 20px;
+  z-index: 45;
+  background-color: transparent;
+  cursor: pointer;
+}
+.key {
+  width: 50%;
+  height: 35%;
+  z-index: 10;
+}
+img {
+  width: 100%;
+  height: 100vh;
+}
+
+@media only screen and (max-width: 1200px) {
+  .bg-img-house .house {
+    width: 100vw;
+    height: auto;
+  }
+  img {
+    width: 100%;
+    height: 100vh;
+  }
+}
+@media only screen and (max-width: 989px) {
+  .bg-img-house .house {
+    width: 100vw;
+    height: auto;
+  }
+  img {
+    width: 100%;
+    height: 100vh;
+  }
+  .dnd-section .board-one {
+    top: 45vh;
+    width: 20vh;
+    height: 20vh;
+  }
+}
+@media only screen and (max-width: 768px) {
+  .bg-img-house .house {
+    width: 100vw;
+    height: auto;
+  }
+  img {
+    width: 100%;
+    height: 100vh;
+  }
+  .dnd-section .board-one {
+    top: 34vh;
+    width: 16vh;
+    height: 12vh;
+  }
+}
+@media only screen and (max-width: 540px) {
+  .bg-img-house .house {
+    width: 100vw;
+    height: auto;
+  }
+  img {
+    width: 100%;
+    height: 100vh;
+  }
+  .dnd-section .board-one {
+    top: 25vh;
+    width: 11vh;
+    height: 9vh;
+  }
+}
+@media only screen and (max-width: 300px) {
+  .bg-img-house .house {
+    width: 100vw;
+    height: auto;
+  }
+  img {
+    width: 100%;
+    height: 100vh;
+  }
+  .dnd-section .board-one {
+    top: 25vh;
+    width: 11vh;
+    height: 9vh;
+  }
 }

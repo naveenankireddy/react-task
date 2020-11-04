@@ -2,6 +2,7 @@ import React, { Component } from "react";
 import "./App.css";
 import Home from "./Components/Home";
 import Map from "./Components/Map";
+import "bootstrap/dist/css/bootstrap.min.css";
 
 class App extends React.Component {
   constructor(props) {
@@ -33,7 +34,7 @@ class App extends React.Component {
   };
   render() {
     return (
-      <div>
+      <div className="App">
         {this.state.showHideHome && (
           <Home
             showHideHome={this.state.showHideHome}

@@ -72,7 +72,7 @@
 .India:hover > .ripple {
   border: 8px solid #32759f;
   opacity: o.5;
-  animation: ring 1.5s linear infinite;
+  animation: ring 1s linear infinite;
   background-color: transparent;
   position: absolute;
   border-radius: 50%;
