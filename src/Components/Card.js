@@ -2,7 +2,8 @@ import React from "react";
 
 function Card(props) {
   const dragStart = (e) => {
-    const target = e.target;
+    const target = e.target.parentElement;
+    console.log(target);
     e.dataTransfer.setData("card_id", target.id);
     setTimeout(() => {
       target.style.visibility = "hidden";

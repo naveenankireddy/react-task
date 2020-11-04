@@ -1,5 +1,6 @@
 import React, { Component } from "react";
 import "../styles/map.css";
+import googleMap from "../assets/world-map-black-and-blue.jpg";
 
 export default class Map extends Component {
   constructor(props) {
@@ -13,8 +14,10 @@ export default class Map extends Component {
     return (
       <div className="main-map">
         <div className="bg-img-map">
+          <img className="house" src={googleMap} alt="house" />
+
           <div
-            className="India"
+            className="india"
             onClick={() => this.props.hideComponent("showHideMap")}
           >
             <div className="ripple"></div>

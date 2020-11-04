@@ -1,31 +1,24 @@
 .bg-img-map {
-  background: url("../assets//world-map-black-and-blue.jpg");
-  background-size: contain;
+  position: relative;
   object-fit: cover;
-  background-repeat: no-repeat;
-  width: 1200px;
-  height: 600px;
   background-position: center;
-  margin-left: 60px;
-  /* overflow: hidden; */
+  height: 100vh;
 }
-.main-map {
-  background-color: #010101;
-}
-.India {
+
+.india {
   color: white;
-  margin-left: 754px;
+  margin-left: 67%;
   position: absolute;
   font-size: 0.85rem;
-  top: 300px;
+  top: 50%;
   z-index: 1;
 }
 .cuba {
   position: absolute;
   color: white;
   font-size: 0.85rem;
-  margin-left: 380px;
-  top: 289px;
+  margin-left: 28%;
+  top: 49%;
 }
 .cuba:hover {
   color: white;
@@ -33,7 +26,7 @@
   animation: neonGlow 2s infinite alternate
     cubic-bezier(0.455, 0.03, 0.515, 0.955);
 }
-.India:hover {
+.india:hover {
   color: white;
   cursor: pointer;
   animation: neonGlow 2s infinite alternate
@@ -69,7 +62,7 @@
   /* top: 46%; */
   /* left: 46%; */
 }
-.India:hover > .ripple {
+.india:hover > .ripple {
   border: 8px solid #32759f;
   opacity: o.5;
   animation: ring 1s linear infinite;
@@ -87,5 +80,11 @@
   to {
     opacity: 0;
     transform: scale(2.7, 2.7);
+  }
+}
+
+@media only screen and (max-width: 1200px) {
+  .bg-img-map {
+    height: auto;
   }
 }
