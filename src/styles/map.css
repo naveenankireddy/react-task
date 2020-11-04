@@ -59,8 +59,6 @@
   border-radius: 50%;
   left: 10px;
   top: -1px;
-  /* top: 46%; */
-  /* left: 46%; */
 }
 .india:hover > .ripple {
   border: 8px solid #32759f;
@@ -69,7 +67,6 @@
   background-color: transparent;
   position: absolute;
   border-radius: 50%;
-  /* top: 46%; */
   left: 5px;
 }
 
