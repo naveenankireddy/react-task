@@ -16,7 +16,6 @@
   position: absolute;
   left: 31%;
   top: 32%;
-  border: 1px solid black;
   width: 9%;
   height: 45%;
   cursor: pointer;
@@ -64,8 +63,6 @@
   position: absolute;
   top: 62%;
   left: 44%;
-  /* margin: 10px; */
-
   border: 1px solid black;
   width: 100%;
   max-width: 10%;
@@ -97,6 +94,7 @@
   text-align: center;
   z-index: 10;
   padding-bottom: 50px;
+  transform: translate(15px, -15px);
 }
 img {
   width: 100%;
